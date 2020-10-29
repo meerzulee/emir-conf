@@ -1,5 +1,26 @@
 @tailwind base;
 @import "./Montserrat.css";
+
+@screen tablet-mini{
+    html {
+        /* 1rem 14px 14/16=87.5 */
+        font-size: 87.5%
+    }
+}
+
+@screen phone{
+    html {
+        /* 1rem 14px 14/16=87.5 */
+        font-size: 75%
+    }
+}
+@screen phone-mini{
+    html {
+        /* 1rem 14px 14/16=87.5 */
+        font-size: 62.5%
+    }
+}
+
 body{
     margin: 0;
 }
@@ -9,12 +30,30 @@ html{
     @apply font-body
 }
 
+.header{
+    @apply text-4xl font-bold
+}
+
+@screen laptop {
+    .header{
+        @apply text-3xl
+    }
+}
 .card-text-p{
     @apply my-3  leading-tight font-bold
 }
 
 .tracker-text{
-    @apply mt-6  text-3xl font-medium leading-tight
+    @apply mt-6  text-2xl font-medium leading-tight
+}
+.cta-btn{
+    @apply px-12 py-6 text-xl rounded-2xl bg-primary
+}
+
+@screen desktop {
+    .tracker-text{
+        @apply text-xl
+    }
 }
 
 @tailwind utilities;

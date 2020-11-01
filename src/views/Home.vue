@@ -2,13 +2,13 @@
   <div class="uppercase home">
     <!-- header -->
     <div class="relative flex w-full h-screen phone:h-full">
+      <img
+        src="@/assets/images/bg-header.png"
+        class="object-cover object-bottom w-full h-full absolute inset-0"
+        alt=""
+      />
       <!--  -->
-      <div class="relative w-1/2 laptop-mini:w-full">
-        <img
-          src="@/assets/images/bg-left.png"
-          class="absolute object-cover w-full h-full"
-          alt=""
-        />
+      <div class="relative w-1/2 secondary-trans laptop-mini:w-full">
         <div
           class="relative flex flex-col items-start py-16 pr-12 ml-40 text-left text-white tablet-mini:my-20 tablet:pr-0 tablet:text-center tablet:ml-0 tablet:items-center laptop:ml-24"
         >
@@ -33,13 +33,6 @@
         </div>
       </div>
       <!--  -->
-      <div class="relative z-0 flex w-1/2 h-full laptop-mini:hidden">
-        <img
-          src="@/assets/images/bg-right.png"
-          class="object-cover w-full h-full"
-          alt=""
-        />
-      </div>
     </div>
     <div class="py-24 tablet:py-12">
       <div class="flex flex-col max-w-6xl mx-auto tablet-mini:px-12">
@@ -103,7 +96,7 @@
         alt=""
       />
       <div class="relative max-w-5xl py-24 mx-auto laptop:py-12">
-        <h1 class="mb-32 text-center header laptop:mb-16">Для кого</h1>
+        <h1 class="mb-24 text-center header laptop:mb-16">Для кого</h1>
         <div
           class="flex justify-between w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
         >
@@ -113,19 +106,33 @@
             <h1 class="mb-4 text-2xl font-extrabold leading-tight">
               Для начинающих стартаперов
             </h1>
-            <p class="card-text-p">
-              протестируешь и упакуешь свою бизнес - идею
-            </p>
-            <p class="card-text-p">
-              поймешь свою бизнес модель и сделаешь первые продажи
-            </p>
-            <p class="card-text-p">
-              соберешь команду, которая будет гореть твоим проектом
-            </p>
-            <p class="card-text-p">
-              получишь инструменты для быстрого роста бизнеса
-            </p>
-            <p class="card-text-p"></p>
+            <div
+              class="flex items-center -ml-8"
+              v-for="(item, index) in [
+                'протестируешь и упакуешь свою бизнес - идею',
+                'поймешь свою бизнес модель и сделаешь первые продажи',
+                'соберешь команду, которая будет гореть твоим проектом',
+                'получишь инструменты для быстрого роста бизнеса',
+              ]"
+              :key="index"
+            >
+              <div class="my-2 mr-3">
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.9183 4.8527L7.51777 17.2533C7.40854 17.3625 7.23169 17.3625 7.12272 17.2533L0.0816677 10.212C-0.0273039 10.1032 -0.0273039 9.92639 0.0816677 9.81717L1.79255 8.10629C1.90177 7.99731 2.07863 7.99731 2.1876 8.10629L7.3205 13.2389L17.8127 2.74677C17.9221 2.6378 18.0985 2.6378 18.2077 2.74677L19.9183 4.45765C20.0276 4.56662 20.0276 4.74322 19.9183 4.8527Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="card-text-p">
+                {{ item }}
+              </p>
+            </div>
           </div>
           <div
             class="flex flex-col px-12 py-10 shadow-lg tablet:mt-20 h-480 w-420 bg-primary rounded-2xl"
@@ -133,18 +140,39 @@
             <h1 class="mb-4 text-2xl font-extrabold leading-tight">
               Для действующих предпринимателей
             </h1>
-
-            <p class="card-text-p">упакуешь свой бизнес</p>
-            <p class="card-text-p">
-              отстроешься от конкурентов и станешь №1 в своей нише
-            </p>
-            <p class="card-text-p">увеличишь продажи в бизнесе</p>
-            <p class="card-text-p">
-              получишь инструменты для масштабирования бизнеса
-            </p>
-            <p class="card-text-p">научишься эффективно управлять командой</p>
-            <p class="card-text-p">пробьешь свой личный финансовый потолок</p>
+            <div
+              class="flex items-center -ml-8"
+              v-for="(item, index) in [
+                'упакуешь свой бизнес',
+                'отстроешься от конкурентов и станешь №1 в своей нише',
+                'увеличишь продажи в бизнесе',
+                'получишь инструменты для масштабирования бизнеса',
+                'научишься эффективно управлять командой',
+                'пробьешь свой личный финансовый потолок',
+              ]"
+              :key="index"
+            >
+              <div class="my-2 mr-3">
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.9183 4.8527L7.51777 17.2533C7.40854 17.3625 7.23169 17.3625 7.12272 17.2533L0.0816677 10.212C-0.0273039 10.1032 -0.0273039 9.92639 0.0816677 9.81717L1.79255 8.10629C1.90177 7.99731 2.07863 7.99731 2.1876 8.10629L7.3205 13.2389L17.8127 2.74677C17.9221 2.6378 18.0985 2.6378 18.2077 2.74677L19.9183 4.45765C20.0276 4.56662 20.0276 4.74322 19.9183 4.8527Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <p class="card-text-p">
+                {{ item }}
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="w-full mt-16 flex justify-center">
+          <a href="#" class="cta-btn bg-secondary">То, что мне нужно</a>
         </div>
       </div>
     </div>
@@ -163,7 +191,16 @@
             class="flex flex-col justify-start w-1/2 text-left text-black tablet:w-11/12"
           >
             <h1 class="tracker-text">
-              <b>Эмир Касеев @emirforbes:</b> <br class="tablet:hidden" />
+              <b
+                >Эмир Касеев
+                <a
+                  href="https://www.instagram.com/emirforbes/"
+                  class="underline text-secondary"
+                  target="_blank"
+                  >@emirforbes</a
+                >:</b
+              >
+              <br class="tablet:hidden" />
               сертифицированный <br class="tablet:hidden" />
               трекер <b>ФРИИ</b> г. Москва
             </h1>
@@ -185,8 +222,23 @@
             </h1>
           </div>
           <div
-            class="flex flex-col justify-center w-1/2 text-black bg-gray-500"
-          ></div>
+            class="flex px-4 tablet:mt-10 flex-col justify-center tablet:w-full w-1/2 text-black"
+          >
+            <swiper
+              class="swiper w-full flex justify-center"
+              :options="swiperOption"
+            >
+              <swiper-slide v-for="(item, index) in imgArr" :key="index"
+                ><img
+                  :src="item.img"
+                  class="w-auto tablet:h-auto tablet:w-full object-cover h-480"
+                  alt=""
+              /></swiper-slide>
+
+              <div class="swiper-button-prev" slot="button-prev"></div>
+              <div class="swiper-button-next" slot="button-next"></div>
+            </swiper>
+          </div>
         </div>
       </div>
     </div>
@@ -213,8 +265,34 @@
 
 <script>
 // @ is an alias to /src
-
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
 export default {
   name: 'Home',
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  data() {
+    return {
+      imgArr: [
+        { img: require('@/assets/images/1.jpg') },
+        { img: require('@/assets/images/2.jpg') },
+        { img: require('@/assets/images/3.jpg') },
+        { img: require('@/assets/images/4.jpg') },
+      ],
+      swiperOption: {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
+    }
+  },
 }
 </script>
+<style >
+.secondary-trans {
+  background: rgba(50, 0, 157, 0.75);
+}
+</style>

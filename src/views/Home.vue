@@ -89,10 +89,10 @@
         </div>
       </div>
     </div>
-    <div class="relative h-screen text-white tablet:h-full">
+    <div class="relative h-full text-white tablet:h-full">
       <img
         src="@/assets/images/banner.png"
-        class="absolute inset-0 z-0 w-full h-screen tablet:object-cover tablet:h-full"
+        class="absolute inset-0 z-0 w-full h-full tablet:object-cover tablet:h-full"
         alt=""
       />
       <div class="relative max-w-5xl py-24 mx-auto laptop:py-12">
@@ -177,7 +177,7 @@
       </div>
     </div>
     <!--  -->
-    <div class="py-24">
+    <div class="my-24 tablet:mt-20">
       <div
         class="flex flex-col px-64 mx-auto laptop:px-32 laptop-mini:px-12 desktop:px-40"
       >

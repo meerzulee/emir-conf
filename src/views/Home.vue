@@ -13,7 +13,7 @@
           class="relative flex flex-col items-start py-16 pr-12 ml-40 text-left text-white tablet-mini:my-20 tablet:pr-0 tablet:text-center tablet:ml-0 tablet:items-center laptop:ml-24"
         >
           <h1 class="mb-20 text-2xl font-bold">
-            4 ноября - 16 декабря <br />
+            ноябрь - декабрь <br />
             участие бесплатное
           </h1>
           <h1

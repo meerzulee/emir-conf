@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -23,7 +23,13 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+
 })
+router.beforeEach((to, from, next) => {
+  document.title = 'Программа инкубации Astana Hub в ВКО';
+  next();
+});
+
 
 export default router

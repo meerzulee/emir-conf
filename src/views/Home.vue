@@ -29,7 +29,12 @@
             <br class="desktop:hidden" />
             в г. Усть-Каменагорск
           </h3>
-          <a href="#" class="mt-24 cta-btn">Оставить заявку</a>
+          <a
+            href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"
+            target="blank"
+            class="mt-24 cta-btn"
+            >Оставить заявку</a
+          >
         </div>
       </div>
       <!--  -->
@@ -172,7 +177,12 @@
           </div>
         </div>
         <div class="w-full mt-16 flex justify-center">
-          <a href="#" class="cta-btn bg-secondary">То, что мне нужно</a>
+          <a
+            target="blank"
+            href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"
+            class="cta-btn bg-secondary"
+            >То, что мне нужно</a
+          >
         </div>
       </div>
     </div>
@@ -257,7 +267,12 @@
           Прокачай свой бизнес <br class="tablet-mini:hidden" />
           вместе с Astana Hub
         </h1>
-        <a href="#" class="cta-btn">Участвовать</a>
+        <a
+          href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"
+          class="cta-btn"
+          target="blank"
+          >Участвовать</a
+        >
       </div>
     </div>
   </div>
@@ -294,5 +309,9 @@ export default {
 <style >
 .secondary-trans {
   background: rgba(50, 0, 157, 0.75);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
 }
 </style>

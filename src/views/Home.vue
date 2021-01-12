@@ -13,7 +13,7 @@
           class="relative flex flex-col items-start py-16 pr-12 ml-40 text-left text-white tablet-mini:my-20 tablet:pr-0 tablet:text-center tablet:ml-0 tablet:items-center laptop:ml-24"
         >
           <h1 class="mb-20 text-2xl font-bold">
-            ноябрь - декабрь <br />
+            с 1 февраля - 27 февраля <br />
             участие бесплатное
           </h1>
           <h1
@@ -25,16 +25,11 @@
           <h3
             class="mt-10 text-lg font-semibold laptop-mini:max-w-sm tablet:text-lg tablet:max-w-md laptop:text-base"
           >
-            Инкубационный онлайн - практикум от Astana Hub
+            Образовательная программа для предпринимателей креативной индустрии
+            Казахстана
             <br class="desktop:hidden" />
-            в г. Усть-Каменагорск
           </h3>
-          <a
-            href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"
-            target="blank"
-            class="mt-24 cta-btn"
-            >Оставить заявку</a
-          >
+          <a target="blank" class="mt-24 cta-btn">Оставить заявку</a>
         </div>
       </div>
       <!--  -->
@@ -48,30 +43,35 @@
           <div
             class="flex flex-col justify-center w-1/2 text-black tablet:w-full"
           >
-            <h1 class="header">6 недель</h1>
-            <p class="text-lg font-semibold">прокачки твоего бизнеса</p>
+            <h1 class="header text-3xl leading-tight">
+              4 недель <br />
+              прокачки твоего бизнеса
+            </h1>
+            <!-- <p class="text-lg font-semibold"></p> -->
           </div>
           <div
             class="flex flex-col justify-center w-1/2 text-black tablet:mt-10 tablet:w-full"
           >
-            <h1 class="header">15</h1>
-            <p class="text-lg font-semibold">стартапов и бизнесов</p>
+            <h1 class="header text-3xl leading-tight">
+              50 <br />стартапов и бизнесов
+            </h1>
+            <p class="text-lg font-semibold"></p>
           </div>
         </div>
         <div
           class="flex mt-24 mb-24 tablet:flex-col tablet:mt-0 laptop-mini:flex-wrap"
         >
           <div
-            class="flex flex-col justify-center w-1/3 text-black tablet:mb-10 tablet:mt-10 laptop-mini:mb-16 laptop-mini:w-full"
+            class="flex flex-col justify-center w-1/2 text-black tablet:mb-10 tablet:mt-10 laptop-mini:mb-16 laptop-mini:w-full"
           >
-            <h1 class="header">50 часов</h1>
-            <p class="text-lg font-semibold">
+            <!-- <h1 class="header">50 часов</h1> -->
+            <p class="header text-3xl leading-tight">
               индивидуальных <br />
               консультаций <br />
               от ведущих экспертов
             </p>
           </div>
-          <div
+          <!-- <div
             class="flex flex-col justify-center w-1/3 text-black tablet:w-full laptop-mini:w-1/2"
           >
             <h1 class="header">90 часов</h1>
@@ -80,12 +80,12 @@
               консультаций <br />
               от ведущих экспертов
             </p>
-          </div>
+          </div> -->
           <div
-            class="flex flex-col justify-center w-1/3 text-black tablet:mt-10 tablet:w-full laptop-mini:w-1/2"
+            class="flex flex-col justify-center w-1/2 text-black tablet:mt-10 tablet:w-full laptop-mini:w-1/2"
           >
-            <h1 class="header">50 часов</h1>
-            <p class="text-lg font-semibold">
+            <!-- <h1 class="header">50 часов</h1> -->
+            <p class="header text-3xl leading-tight">
               практических <br />
               воркшопов по развитию <br />
               и масштабированию бизнеса
@@ -101,7 +101,9 @@
         alt=""
       />
       <div class="relative max-w-5xl py-24 mx-auto laptop:py-12">
-        <h1 class="mb-24 text-center header laptop:mb-16">Для кого</h1>
+        <h1 class="mb-24 text-center header laptop:mb-16">
+          Для начинающих предпринимателей креативной индустрии
+        </h1>
         <div
           class="flex justify-between w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
         >
@@ -114,10 +116,12 @@
             <div
               class="flex items-center -ml-8"
               v-for="(item, index) in [
-                'протестируешь и упакуешь свою бизнес - идею',
-                'поймешь свою бизнес модель и сделаешь первые продажи',
-                'соберешь команду, которая будет гореть твоим проектом',
-                'получишь инструменты для быстрого роста бизнеса',
+                'Мультипликация и программирование',
+                'Издательское дело и литература',
+                'Музыка',
+                'Кино и Видео',
+                'Изобразительное искусства',
+                'Мода',
               ]"
               :key="index"
             >
@@ -148,12 +152,13 @@
             <div
               class="flex items-center -ml-8"
               v-for="(item, index) in [
-                'упакуешь свой бизнес',
-                'отстроешься от конкурентов и станешь №1 в своей нише',
-                'увеличишь продажи в бизнесе',
-                'получишь инструменты для масштабирования бизнеса',
-                'научишься эффективно управлять командой',
-                'пробьешь свой личный финансовый потолок',
+                'Дизайн',
+                'Радио',
+                'Исполнительские искусства',
+                'Архитектура',
+                'Декоративные искусства и ремесла',
+                'Телевидение ',
+                'Реклама',
               ]"
               :key="index"
             >
@@ -227,7 +232,7 @@
               инвестиций в казахстанские стартапы
             </h1>
             <h1 class="tracker-text">
-              <b>Партнеры:</b> Astana hub,<br class="tablet:hidden" />
+              <b>Партнеры:</b> <br class="tablet:hidden" />
               Startupbootcamp, ФРИИ, МФЦА, Nazarbayev University, Stratup Magic
             </h1>
           </div>
@@ -265,7 +270,7 @@
       >
         <h1 class="mb-10 text-5xl font-bold tablet:text-4xl">
           Прокачай свой бизнес <br class="tablet-mini:hidden" />
-          вместе с Astana Hub
+          вместе
         </h1>
         <a
           href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"

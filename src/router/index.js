@@ -27,7 +27,7 @@ const router = new VueRouter({
 
 })
 router.beforeEach((to, from, next) => {
-  document.title = 'Программа инкубации Astana Hub в ВКО';
+  document.title = 'ПРОГРАММА «СТАРТ»';
   next();
 });
 

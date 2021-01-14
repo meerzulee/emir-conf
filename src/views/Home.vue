@@ -12,10 +12,25 @@
         <div
           class="relative flex flex-col items-start py-16 pr-12 ml-40 text-left text-white tablet-mini:my-20 tablet:pr-0 tablet:text-center tablet:ml-0 tablet:items-center laptop:ml-24"
         >
-          <h1 class="mb-20 text-2xl font-bold">
-            с 1 февраля - 27 февраля <br />
-            участие бесплатное
-          </h1>
+          <div class="flex justify-between items-center mb-20">
+            <h1 class="text-2xl font-bold mr-8">
+              с 1 февраля - 27 февраля <br />
+              участие бесплатное
+            </h1>
+
+            <div class="flex">
+              <img
+                src="@/assets/images/pic1.png"
+                class="h-20 mr-10 p-2 rounded-lg bg-gray-200"
+                alt=""
+              />
+              <img
+                src="@/assets/images/pic2.png"
+                class="h-20 p-2 rounded-lg bg-gray-200"
+                alt=""
+              />
+            </div>
+          </div>
           <h1
             class="font-extrabold leading-snug laptop:text-5xl desktop:text-6xl text-7sm"
           >
@@ -25,8 +40,8 @@
           <h3
             class="mt-10 text-lg font-semibold laptop-mini:max-w-sm tablet:text-lg tablet:max-w-md laptop:text-base"
           >
-            Образовательная программа для предпринимателей креативной индустрии
-            Казахстана
+            «Старт» - это программа American Corners Kazakhstan по поддержке
+            начинающих предпринимателей Казахстана в сфере креативной индустрии
             <br class="desktop:hidden" />
           </h3>
           <a target="blank" class="mt-24 cta-btn">Оставить заявку</a>
@@ -35,16 +50,16 @@
       <!--  -->
     </div>
     <div class="py-24 tablet:py-12">
-      <div class="flex flex-col max-w-6xl mx-auto tablet-mini:px-12">
+      <div class="flex flex-col w-full px-16 mx-auto tablet-mini:px-12">
         <h1 class="header text-secondary laptop-mini:mx-32 tablet-mini:mx-0">
-          Инкубационная программа от Astana hub - это:
+          Программа «Старт» - это:
         </h1>
         <div class="flex mt-32 tablet:mt-20 tablet:flex-col">
           <div
             class="flex flex-col justify-center w-1/2 text-black tablet:w-full"
           >
             <h1 class="header text-3xl leading-tight">
-              4 недель <br />
+              4 недели <br />
               прокачки твоего бизнеса
             </h1>
             <!-- <p class="text-lg font-semibold"></p> -->
@@ -53,7 +68,8 @@
             class="flex flex-col justify-center w-1/2 text-black tablet:mt-10 tablet:w-full"
           >
             <h1 class="header text-3xl leading-tight">
-              50 <br />стартапов и бизнесов
+              50 стартапов<br />
+              и бизнесов
             </h1>
             <p class="text-lg font-semibold"></p>
           </div>
@@ -66,9 +82,9 @@
           >
             <!-- <h1 class="header">50 часов</h1> -->
             <p class="header text-3xl leading-tight">
-              индивидуальных <br />
-              консультаций <br />
-              от ведущих экспертов
+              Индивидуальная работа
+              <br />
+              с ведущими трекерами
             </p>
           </div>
           <!-- <div
@@ -86,9 +102,9 @@
           >
             <!-- <h1 class="header">50 часов</h1> -->
             <p class="header text-3xl leading-tight">
-              практических <br />
-              воркшопов по развитию <br />
-              и масштабированию бизнеса
+              Практические воркшопы и семинары <br />
+              по развитию и масштабированию <br />
+              твоего бизнеса
             </p>
           </div>
         </div>
@@ -105,23 +121,22 @@
           Для начинающих предпринимателей креативной индустрии
         </h1>
         <div
-          class="flex justify-between w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
+          class="flex justify-center w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
         >
           <div
             class="flex flex-col px-12 py-10 shadow-lg h-480 w-420 bg-primary rounded-2xl"
           >
             <h1 class="mb-4 text-2xl font-extrabold leading-tight">
-              Для начинающих стартаперов
+              «Старт» - это программа для стартапов:
             </h1>
             <div
               class="flex items-center -ml-8"
               v-for="(item, index) in [
-                'Мультипликация и программирование',
-                'Издательское дело и литература',
-                'Музыка',
-                'Кино и Видео',
-                'Изобразительное искусства',
-                'Мода',
+                'Моды и дизайна',
+                'Рекламы и маркетинга',
+                'Архитектуры',
+                'Мультипликации и программирования',
+                'И других сфер креативной индустрии',
               ]"
               :key="index"
             >
@@ -143,7 +158,7 @@
               </p>
             </div>
           </div>
-          <div
+          <!-- <div
             class="flex flex-col px-12 py-10 shadow-lg tablet:mt-20 h-480 w-420 bg-primary rounded-2xl"
           >
             <h1 class="mb-4 text-2xl font-extrabold leading-tight">
@@ -179,7 +194,7 @@
                 {{ item }}
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="w-full mt-16 flex justify-center">
           <a
@@ -192,13 +207,40 @@
       </div>
     </div>
     <!--  -->
+    <div class="my-24 tablet:mt-20 mb-32">
+      <div
+        class="flex flex-col px-64 mx-auto laptop:px-32 laptop-mini:px-12 desktop:px-40"
+      >
+        <h1 class="header text-secondary">Организатор</h1>
+        <div
+          class="flex justify-between mt-24 tablet:mt-10 tablet:flex-col tablet:justify-center tablet:items-center"
+        >
+          <div
+            class="flex flex-col justify-start w-1/2 text-left text-black tablet:w-11/12"
+          >
+            <!--  -->
+            <p class="tracker-text font-semibold text-justify leading-snug">
+              American Corners Kazakhstan - это небольшие библиотеки в
+              американском стиле, расположенные в рамках местной партнерской
+              организации, обычно библиотеки. Доступ в американские пространства
+              и их коллекции свободный и открыт для всех желающих граждан
+              Казахстана.
+            </p>
+          </div>
+          <div
+            class="flex px-4 justify-center tablet:w-full items-center w-1/2 text-black"
+          >
+            <img src="@/assets/images/pic1.png" class="h-auto w-7/12" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="my-24 tablet:mt-20">
       <div
         class="flex flex-col px-64 mx-auto laptop:px-32 laptop-mini:px-12 desktop:px-40"
       >
-        <h1 class="header text-secondary">
-          Ведущий трекер программы и партнер Astana Hub
-        </h1>
+        <h1 class="header text-secondary">Ведущий трекер программы</h1>
         <div
           class="flex justify-between mt-24 tablet:mt-10 tablet:flex-col tablet:justify-center tablet:items-center"
         >

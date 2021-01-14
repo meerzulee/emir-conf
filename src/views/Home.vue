@@ -12,25 +12,23 @@
         <div
           class="relative flex flex-col items-start py-16 pr-12 ml-40 text-left text-white tablet-mini:my-20 tablet:pr-0 tablet:text-center tablet:ml-0 tablet:items-center laptop:ml-24"
         >
-          <div class="flex justify-between items-center mb-20">
-            <h1 class="text-2xl font-bold mr-8">
-              с 1 февраля - 27 февраля <br />
-              участие бесплатное
-            </h1>
-
-            <div class="flex">
-              <img
-                src="@/assets/images/pic1.png"
-                class="h-20 mr-10 p-2 rounded-lg bg-gray-200"
-                alt=""
-              />
-              <img
-                src="@/assets/images/pic2.png"
-                class="h-20 p-2 rounded-lg bg-gray-200"
-                alt=""
-              />
-            </div>
+          <div class="flex mb-8">
+            <img
+              src="@/assets/images/pic1.png"
+              class="h-20 mr-10 p-2 rounded-lg bg-gray-200"
+              alt=""
+            />
+            <img
+              src="@/assets/images/pic2.png"
+              class="h-20 p-2 rounded-lg bg-gray-200"
+              alt=""
+            />
           </div>
+          <h1 class="text-2xl font-bold mr-8 mb-8">
+            с 1 февраля - 27 февраля <br />
+            участие бесплатное
+          </h1>
+
           <h1
             class="font-extrabold leading-snug laptop:text-5xl desktop:text-6xl text-7sm"
           >
@@ -44,7 +42,12 @@
             начинающих предпринимателей Казахстана в сфере креативной индустрии
             <br class="desktop:hidden" />
           </h3>
-          <a target="blank" class="mt-24 cta-btn">Оставить заявку</a>
+          <a
+            target="blank"
+            href="https://docs.google.com/forms/d/1scsLj0-sXJAqd-4hCiFvzCHFCK8N99eGPtyfqmnxHoI/edit"
+            class="mt-24 cta-btn"
+            >Оставить заявку</a
+          >
         </div>
       </div>
       <!--  -->
@@ -199,7 +202,7 @@
         <div class="w-full mt-16 flex justify-center">
           <a
             target="blank"
-            href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"
+            href="https://docs.google.com/forms/d/1scsLj0-sXJAqd-4hCiFvzCHFCK8N99eGPtyfqmnxHoI/edit"
             class="cta-btn bg-secondary"
             >То, что мне нужно</a
           >
@@ -315,7 +318,7 @@
           вместе
         </h1>
         <a
-          href="https://docs.google.com/forms/d/1ez0_5uYnaQQ1xTcpAvLgesOTdc83XUnoT_TbOmidoAk/edit"
+          href="https://docs.google.com/forms/d/1scsLj0-sXJAqd-4hCiFvzCHFCK8N99eGPtyfqmnxHoI/edit"
           class="cta-btn"
           target="blank"
           >Участвовать</a

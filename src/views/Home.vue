@@ -133,7 +133,7 @@
               «Старт» - это программа для стартапов:
             </h1>
             <div
-              class="flex items-center -ml-8"
+              class="flex items-center"
               v-for="(item, index) in [
                 'Моды и дизайна',
                 'Рекламы и маркетинга',

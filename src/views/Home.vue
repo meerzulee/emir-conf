@@ -38,8 +38,9 @@
           <h3
             class="mt-10 text-lg font-semibold laptop-mini:max-w-sm tablet:text-lg tablet:max-w-md laptop:text-base"
           >
-            «Старт» - это программа American Corners Kazakhstan по поддержке
-            начинающих предпринимателей Казахстана в сфере креативной индустрии
+            Основы креативного предпринимательства - это программа American
+            Corners Kazakhstan по поддержке начинающих предпринимателей
+            Казахстана в сфере креативной индустрии
             <br class="desktop:hidden" />
           </h3>
           <a
@@ -55,7 +56,7 @@
     <div class="py-24 tablet:py-12">
       <div class="flex flex-col w-full px-16 mx-auto tablet-mini:px-12">
         <h1 class="header text-secondary laptop-mini:mx-32 tablet-mini:mx-0">
-          Программа «Старт» - это:
+          Основы креативного предпринимательства:
         </h1>
         <div class="flex mt-32 tablet:mt-20 tablet:flex-col">
           <div
@@ -127,10 +128,11 @@
           class="flex justify-center w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
         >
           <div
-            class="flex flex-col px-12 py-10 shadow-lg h-480 w-420 bg-primary rounded-2xl"
+            class="flex flex-col px-12 py-10 shadow-lg h-auto w-7/12 bg-primary rounded-2xl"
           >
             <h1 class="mb-4 text-2xl font-extrabold leading-tight">
-              «Старт» - это программа для стартапов:
+              Основы креативного предпринимательства - это программа для
+              стартапов:
             </h1>
             <div
               class="flex items-center"
@@ -223,8 +225,8 @@
           >
             <!--  -->
             <p class="tracker-text font-semibold text-justify leading-snug">
-              American Corners Kazakhstan - это небольшие библиотеки в
-              американском стиле, расположенные в рамках местной партнерской
+              Основы креативного предпринимательства - это небольшие библиотеки
+              в американском стиле, расположенные в рамках местной партнерской
               организации, обычно библиотеки. Доступ в американские пространства
               и их коллекции свободный и открыт для всех желающих граждан
               Казахстана.
@@ -303,18 +305,18 @@
       </div>
     </div>
     <div
-      class="relative px-64 py-32 text-white tablet:px-12 laptop:px-32 laptop-mini:px-20 desktop:px-40"
+      class="relative flex px-64 py-32 laptop-mini:flex-col text-white tablet:px-16 laptop:px-16 laptop-mini:px-20 desktop:px-24"
     >
       <img
         src="@/assets/images/footer.png"
-        class="absolute inset-0 w-full h-full"
+        class="absolute inset-0 w-full h-full object-cover"
         alt=""
       />
       <div
-        class="relative flex flex-col items-start text-left tablet:text-center tablet:items-center"
+        class="relative flex flex-col w-1/2 laptop:w-1/3 laptop-mini:w-full items-start text-left tablet:text-center tablet:items-center"
       >
-        <h1 class="mb-10 text-5xl font-bold tablet:text-4xl">
-          Прокачай свой бизнес <br class="tablet-mini:hidden" />
+        <h1 class="mb-10 text-4xl font-bold tablet:text-4xl">
+          Прокачай свой бизнес <br class="laptop-mini:hidden" />
           вместе
         </h1>
         <a
@@ -323,6 +325,39 @@
           target="blank"
           >Участвовать</a
         >
+      </div>
+      <div
+        class="relative w-1/2 laptop:w-2/3 laptop-mini:mt-16 laptop-mini:w-full"
+      >
+        <h1 class="tracker-text font-bold text-left my-2">
+          Instagam страницы Американских уголков:
+        </h1>
+        <div class="flex text-left flex-wrap">
+          <div
+            class="w-1/2 my-1 tablet:w-full"
+            v-for="(item, index) in [
+              'asalmaty',
+              'americancorner_ns',
+              'american_corner_aktobe',
+              'american_corner_karaganda',
+              'american_corner_kostanay',
+              'american_corner_shymkent',
+              'american_corner_oral',
+              'american_corner_oskemen',
+              'american_corner_pavlodar',
+              'american_corner_petropavlovsk',
+            ]"
+            :key="index"
+          >
+            <a
+              target="_blank"
+              :href="`https://www.instagram.com/${item}/`"
+              class="font-medium tablet:text-xl"
+              :class="[index % 2 === 0 ? '' : 'pl-8', 'tablet:pl-0']"
+              >@{{ item }}</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </div>

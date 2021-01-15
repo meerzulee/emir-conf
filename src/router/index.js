@@ -27,7 +27,7 @@ const router = new VueRouter({
 
 })
 router.beforeEach((to, from, next) => {
-  document.title = 'ПРОГРАММА «СТАРТ»';
+  document.title = 'Основы креативного предпринимательства';
   next();
 });
 

@@ -252,7 +252,7 @@
       <div class="relative w-full laptop-mini:mt-16">
         <h1 class="header my-4">
           Instagam страницы <br class="hidden laptop-mini:block" />
-          Американских уголков:
+          American Corners:
         </h1>
         <div
           class="flex laptop-mini:w-full laptop-mini:pl-8 mx-auto justify-between w-full laptop-mini:pr-0 laptop-mini:flex-col laptop-mini:items-center"

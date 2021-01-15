@@ -125,10 +125,10 @@
           Для начинающих предпринимателей креативной индустрии
         </h1>
         <div
-          class="flex justify-center w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
+          class="flex tablet-mini:px-4 justify-center w-full text-left tablet:justify-center tablet:items-center tablet:flex-col laptop:justify-around"
         >
           <div
-            class="flex flex-col px-12 py-10 shadow-lg h-auto w-7/12 bg-primary rounded-2xl"
+            class="flex flex-col px-12 py-10 shadow-lg h-auto tablet-mini:w-full tablet:w-9/12 w-7/12 bg-primary rounded-2xl"
           >
             <h1 class="mb-4 text-2xl font-extrabold leading-tight">
               Основы креативного предпринимательства - это программа для
@@ -241,6 +241,62 @@
       </div>
     </div>
     <!--  -->
+    <div
+      class="relative flex w-full px-64 mx-auto laptop:px-12 desktop:px-32 justify-center text-white py-16"
+    >
+      <img
+        src="@/assets/images/footer.png"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt=""
+      />
+      <div class="relative w-full laptop-mini:mt-16">
+        <h1 class="header my-4">
+          Instagam страницы <br class="hidden laptop-mini:block" />
+          Американских уголков:
+        </h1>
+        <div
+          class="flex laptop-mini:w-full laptop-mini:pl-8 mx-auto justify-between w-full laptop-mini:pr-0 laptop-mini:flex-col laptop-mini:items-center"
+        >
+          <div
+            class="flex-col my-1 laptop-mini:w-full flex text-left justify-start"
+          >
+            <a
+              v-for="(item, index) in [
+                'asalmaty',
+                'americancorner_ns',
+                'american_corner_aktobe',
+                'american_corner_karaganda',
+                'american_corner_kostanay',
+              ]"
+              :key="index"
+              target="_blank"
+              :href="`https://www.instagram.com/${item}/`"
+              class="font-medium text-left text-2xl leading-loose tablet-mini:text-xl"
+              >@{{ item }}</a
+            >
+          </div>
+          <div
+            class="flex-col my-1 laptop-mini:w-full flex text-left justify-start"
+          >
+            <a
+              v-for="(item, index) in [
+                'american_corner_shymkent',
+                'american_corner_oral',
+                'american_corner_oskemen',
+                'american_corner_pavlodar',
+                'american_corner_petropavlovsk',
+              ]"
+              :key="index"
+              target="_blank"
+              :href="`https://www.instagram.com/${item}/`"
+              class="font-medium text-left text-2xl leading-loose tablet-mini:text-xl"
+              >@{{ item }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="my-24 tablet:mt-20">
       <div
         class="flex flex-col px-64 mx-auto laptop:px-32 laptop-mini:px-12 desktop:px-40"
@@ -325,39 +381,6 @@
           target="blank"
           >Участвовать</a
         >
-      </div>
-      <div
-        class="relative w-1/2 laptop:w-2/3 laptop-mini:mt-16 laptop-mini:w-full"
-      >
-        <h1 class="tracker-text font-bold text-left my-2">
-          Instagam страницы Американских уголков:
-        </h1>
-        <div class="flex text-left flex-wrap">
-          <div
-            class="w-1/2 my-1 tablet:w-full"
-            v-for="(item, index) in [
-              'asalmaty',
-              'americancorner_ns',
-              'american_corner_aktobe',
-              'american_corner_karaganda',
-              'american_corner_kostanay',
-              'american_corner_shymkent',
-              'american_corner_oral',
-              'american_corner_oskemen',
-              'american_corner_pavlodar',
-              'american_corner_petropavlovsk',
-            ]"
-            :key="index"
-          >
-            <a
-              target="_blank"
-              :href="`https://www.instagram.com/${item}/`"
-              class="font-medium tablet:text-xl"
-              :class="[index % 2 === 0 ? '' : 'pl-8', 'tablet:pl-0']"
-              >@{{ item }}</a
-            >
-          </div>
-        </div>
       </div>
     </div>
   </div>
